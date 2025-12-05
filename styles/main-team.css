@@ -1,0 +1,67 @@
+main .team {
+  padding: 100px 0 165px;
+  background-color: black;
+}
+
+main .team h2 {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+main .team .team-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+main .team .team-cards .card {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+main .team .team-cards .card:not(:last-child) {
+  margin-right: 5%;
+}
+
+main .team .team-cards .card img {
+  margin-bottom: 20px;
+}
+
+main .team .team-cards .card .name {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+main .team .team-cards .card .post {
+  margin-bottom: 30px;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+main .team .team-cards .card .description {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1050px) {
+  main .team .team-cards {
+    flex-direction: column;
+  }
+
+  main .team .team-cards .card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  main .team .team-cards .card .description {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

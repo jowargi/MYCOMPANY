@@ -1,0 +1,88 @@
+main .contact {
+  padding: 100px 0;
+}
+
+main .contact .title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+main .contact .description {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: #6c6c6c;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+}
+
+main .contact .contact-form .field {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+main .contact .contact-form .field.multiline {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main .contact .contact-form .field input,
+main .contact .contact-form .field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  background-color: rgba(108, 108, 108, 0.1);
+}
+
+main .contact .contact-form .field textarea {
+  resize: none;
+  width: 75%;
+  height: 200px;
+}
+
+main .contact .contact-form .field label {
+  color: #7b7b7b;
+}
+
+main .contact .contact-form .field label::after {
+  content: "*";
+  display: inline;
+  margin-left: 3px;
+  color: red;
+}
+
+main .contact .contact-form .submit-btn button {
+  float: right;
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fcac45;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1050px) {
+  main .contact .contact-form .field {
+    display: block;
+    width: 100%;
+  }
+
+  main .contact .contact-form .submit-btn {
+    box-sizing: border-box;
+    width: 75%;
+    height: auto;
+  }
+}

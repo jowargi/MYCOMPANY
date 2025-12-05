@@ -1,0 +1,27 @@
+main .home {
+  padding: 210px 0 420px;
+  background-color: black;
+}
+
+main .home h1 {
+  color: #999999;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+main .home h1 span {
+  color: #fcac45;
+  font-weight: 600;
+}
+
+main .home p {
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+main .home p span {
+  font-weight: 600;
+}

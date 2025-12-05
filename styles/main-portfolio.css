@@ -1,0 +1,44 @@
+main .portfolio {
+  padding: 100px 0;
+}
+
+main .portfolio .title {
+  margin-bottom: 30px;
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+main .portfolio .title span {
+  font-weight: 600;
+}
+
+main .portfolio .description {
+  margin-top: 50px;
+  margin-bottom: 170px;
+  color: #6c6c6c;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+}
+
+main .portfolio .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+}
+
+@media screen and (max-width: 1050px) {
+  main .portfolio .gallery {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    justify-items: center;
+  }
+
+  main .portfolio .gallery img:not(:nth-child(4n + 1)) {
+    display: none;
+  }
+}

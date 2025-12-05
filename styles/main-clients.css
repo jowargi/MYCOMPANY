@@ -1,0 +1,39 @@
+main .clients {
+  padding: 100px 0 210px;
+  background-color: black;
+}
+
+main .clients .title {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+main .clients .title span {
+  font-weight: 600;
+}
+
+main .clients .logos {
+  margin-top: 110px;
+  text-align: center;
+}
+
+main .clients .logos img:not(:last-child) {
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 1050px) {
+  main .clients .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main .clients .logos img:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}

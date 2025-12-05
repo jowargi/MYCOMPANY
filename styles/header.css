@@ -1,0 +1,76 @@
+header {
+  position: sticky;
+  top: 0;
+  padding-top: 55px;
+  background-color: black;
+}
+
+header .logo {
+  cursor: pointer;
+  float: left;
+  margin-left: 12%;
+  color: white;
+  font-size: 1.4em;
+  line-height: 1;
+  font-weight: 800;
+}
+
+header .topnav {
+  float: right;
+  margin-right: 7%;
+}
+
+header .topnav .list li {
+  display: inline-block;
+}
+
+header .topnav .list li:not(:last-child) {
+  margin-right: 35px;
+}
+
+header .topnav .list li a {
+  display: inline-block;
+  padding-bottom: 12px;
+  border-bottom: 3px solid transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 600;
+}
+
+header .topnav .list li a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+
+header .topnav .list .burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  header .topnav {
+    margin-right: 2%;
+  }
+
+  header .topnav .list li {
+    display: none;
+  }
+
+  header .topnav .list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  header .topnav .list .burger-menu {
+    display: block;
+    font-size: 2em;
+  }
+
+  header .topnav.responsive .list li {
+    display: block;
+    text-align: right;
+  }
+
+  header .topnav.responsive .list li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
